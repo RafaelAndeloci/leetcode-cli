@@ -1,0 +1,56 @@
+{
+  "name": "leetcode-solutions",
+  "version": "1.0.0",
+  "description": "Repositório pessoal de exercícios do LeetCode",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "node ./scripts/script-runner.js setup",
+    "create": "node ./scripts/script-runner.js create",
+    "run": "node ./scripts/script-runner.js run",
+    "list": "node ./scripts/script-runner.js list",
+    "search": "node ./scripts/script-runner.js search",
+    "create:ts": "node ./scripts/script-runner.js create",
+    "create:py": "node ./scripts/script-runner.js create",
+    "create:js": "node ./scripts/script-runner.js create",
+    "run:ts": "node ./scripts/script-runner.js run",
+    "run:py": "node ./scripts/script-runner.js run",
+    "run:js": "node ./scripts/script-runner.js run",
+    "build": "tsc",
+    "test": "echo \"Executando todos os testes...\"",
+    "help": "echo \"Comandos disponíveis:\\n- npm run setup: Configura o ambiente\\n- npm run create <id> <categoria> [linguagem]: Cria um novo problema\\n- npm run create:ts <id> <categoria>: Cria um novo problema em TypeScript\\n- npm run create:py <id> <categoria>: Cria um novo problema em Python\\n- npm run create:js <id> <categoria>: Cria um novo problema em JavaScript\\n- npm run run <id> <linguagem>: Executa uma solução\\n- npm run run:ts <id>: Executa uma solução TypeScript\\n- npm run run:py <id>: Executa uma solução Python\\n- npm run run:js <id>: Executa uma solução JavaScript\\n- npm run list <categoria>: Lista problemas por categoria\\n- npm run search <termo>: Busca problemas\"",
+    "cli": "tsx ./cli/index.tsx",
+    "dev:cli": "ts-node ./cli/index.tsx",
+    "build:cli": "tsc -p ./cli/tsconfig.json"
+  },
+  "bin": {
+    "leetcode-cli": "./cli/dist/index.js"
+  },
+  "keywords": [
+    "leetcode",
+    "algoritmos",
+    "estrutura-de-dados",
+    "typescript",
+    "python",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@types/react": "^18.2.73",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "ink": "^4.4.1",
+    "ink-big-text": "^2.0.0",
+    "ink-gradient": "^3.0.0",
+    "ink-select-input": "^5.0.0",
+    "ink-spinner": "^5.0.0",
+    "ink-text-input": "^5.0.1",
+    "meow": "^13.1.0",
+    "react": "^18.2.0"
+  }
+}
