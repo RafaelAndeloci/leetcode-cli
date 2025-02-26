@@ -3,6 +3,7 @@ import { Box, render, Text } from "ink";
 import meow from "meow";
 import React, { useEffect, useState } from "react";
 import CreateProblem from "./commands/CreateProblem";
+import ListProblems from "./commands/ListProblems";
 import Header from "./components/Header";
 import MainMenu from "./components/MainMenu";
 
@@ -44,11 +45,7 @@ const App: React.FC = () => {
           </Box>
         );
       case "list":
-        return (
-          <Box>
-            <Text>Listar problemas (Em desenvolvimento)</Text>
-          </Box>
-        );
+        return <ListProblems onBack={backToMenu} />;
       case "search":
         return (
           <Box>
